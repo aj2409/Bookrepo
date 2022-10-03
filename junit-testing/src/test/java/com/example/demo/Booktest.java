@@ -17,12 +17,13 @@ import com.entity.bookrepo;
 
 @SpringBootTest(classes=JunitTestingApplication.class)
 public class Booktest {
+	//Mockito
 	@Mock 
 	bookrepo bookRepo;
-	
+	//Inject
 	@InjectMocks
 	BookService bookService = new BookService();
-	
+	//test
 	@Test
 	public void testGetAllBooks() {
 		
